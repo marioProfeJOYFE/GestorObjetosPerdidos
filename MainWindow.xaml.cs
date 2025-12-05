@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using GestorObjetosPerdidos.MVVM.Views;
 
 namespace GestorObjetosPerdidos
 {
@@ -19,6 +20,7 @@ namespace GestorObjetosPerdidos
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Navigate(new ListaObjetosPerdidosPage());
         }
     }
 }

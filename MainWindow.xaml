@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GestorObjetosPerdidos"
         mc:Ignorable="d"
+        DataContext="{StaticResource AppViewModel}"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*" x:Name="SecondColumn"/>
+        </Grid.ColumnDefinitions>
+        <Frame Grid.Column="0" x:Name="MainFrame"/>
+        <Frame Grid.Column="1" x:Name="SecondFrame"/>
     </Grid>
 </Window>
